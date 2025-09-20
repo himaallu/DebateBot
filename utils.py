@@ -1,8 +1,10 @@
 import os
 from PyPDF2 import PdfReader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings.huggingface import HuggingFaceEmbeddings
+# Old, working version for langchain 0.1.16
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.vectorstores import FAISS
+from langchain.embeddings import HuggingFaceEmbeddings
+
 
 # PDF loader
 def load_pdf(file):
