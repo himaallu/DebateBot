@@ -1,6 +1,7 @@
-streamlit
-python-dotenv
-langchain
+streamlit==1.30.0
+langchain==0.1.16
 faiss-cpu
+sentence-transformers
 PyPDF2
 google-generativeai
+python-dotenv
