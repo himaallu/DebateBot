@@ -8,8 +8,9 @@ from prompts import PRO_PROMPT, CON_PROMPT, MODERATOR_PROMPT
 
 load_dotenv()
 
-# Configure Gemini
-genai.configure(api_key="AIzaSyDlWGoBEeDF9pWKvRZ_00zcYOlq61usKPU")
+
+
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 def gemini_call(prompt, model="gemini-1.5-flash"):
     response = genai.GenerativeModel(model).generate_content(prompt)
